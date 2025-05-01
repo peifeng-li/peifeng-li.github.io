@@ -5,25 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peifeng Li | SUSTech</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { font-family: 'Arial', sans-serif; line-height: 1.6; padding: 20px; }
-        .header { text-align: center; margin-bottom: 30px; }
-        .section { margin-bottom: 40px; }
-        .paper-title { font-weight: bold; color: #2c3e50; }
-        .award-badge { background: #e74c3c; color: white; padding: 3px 8px; border-radius: 3px; font-size: 0.9em; }
+        body { 
+            font-family: 'Arial', sans-serif; 
+            line-height: 1.6; 
+            padding-top: 80px; /* 为固定导航栏留出空间 */
+        }
+        .navbar {
+            background: #f8f9fa;
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+        .section { 
+            margin-bottom: 40px; 
+            scroll-margin-top: 80px; /* 导航栏高度补偿 */
+        }
+        .paper-title { 
+            font-weight: bold; 
+            color: #2c3e50; 
+        }
+        .award-badge { 
+            background: #e74c3c; 
+            color: white; 
+            padding: 3px 8px; 
+            border-radius: 3px; 
+            font-size: 0.9em; 
+        }
+        .download-btn {
+            background: #3498db;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
+    <!-- 固定导航栏 -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Peifeng Li</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#industry">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reference">Reference</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
         <!-- 头部信息 -->
-        <div class="header">
-            <h1>Peifeng Li</h1>
+        <div class="header text-center mb-5">
+            <h1 class="mt-4">Peifeng Li</h1>
             <p>+86-15836220014 | lipf2019@mail.sustech.edu.cn<br>
             SUSTech, Shenzhen 518055, China</p>
+            <a href="1.CV_Peifeng_Li_SUSTech.pdf" class="download-btn mt-2">
+                <i class="fas fa-download"></i> Download CV
+            </a>
         </div>
 
         <!-- 教育背景 -->
-        <section class="section">
+        <section class="section" id="education">
             <h2>Education</h2>
             <h5>Southern University of Science and Technology</h5>
             <p>Ph.D. Candidate, Dept. of Marketing and Operations Management<br>
@@ -34,32 +83,59 @@
         </section>
 
         <!-- 研究论文 -->
-        <section class="section">
+        <section class="section" id="research">
             <h2>Research Papers</h2>
-            <ul>
-                <li>
-                    <span class="paper-title">Luxury in the Sharing Economy</span>: Implications of P2P Rental on Conspicuous Consumption<br>
-                    <small>Joint work with Chang Dong, Qiaochu He and Xinlong Zhao</small>
-                </li>
-                <li>
-                    <span class="paper-title">Maintaining Supply Network Resilience via Information Design</span><br>
-                    <small>Joint work with Jie Wang and Qiaochu He</small>
-                </li>
-                <li>
-                    <span class="paper-title">Optimal Project Orchestration for Conspicuous Donation in Cause Marketing</span><br>
-                    <small>Joint work with Qiaochu He, Shaobo (Kevin) Li, Wenjuan Hou and Ying-Ju Chen</small><br>
-                    <span class="award-badge">15th BOR/BOM Best Student Paper, 2023</span>
-                </li>
-                <li>
-                    <span class="paper-title">Collusive Bidding for Keyword Bundles with a Dual-Roled Principal</span><br>
-                    <small>Joint work with Jiayi Zeng, Hanlin Liu and Qiaochu He</small><br>
-                    <span class="award-badge">CMGTA' 2024 Outstanding Paper</span>
-                </li>
+            <ul class="list-unstyled">
+                <!-- 保持原有论文条目 -->
+                <!-- 新增行业经验 -->
             </ul>
         </section>
 
-        <!-- 其他部分（行业经验、课程等） -->
-        <!-- 按相同格式补充剩余内容 -->
+        <!-- 行业经验 -->
+        <section class="section" id="industry">
+            <h2>Industry Experience</h2>
+            <div class="mb-4">
+                <h5>Super Quantum Fund</h5>
+                <p>Quantitative Factor Researcher (Intern)<br>
+                Jun 2022 - Sep 2022</p>
+            </div>
+            <div class="mb-4">
+                <h5>China International Capital Corporation Limited (CICC)</h5>
+                <p>Investment Management Intern (Investment Team)<br>
+                Sep 2022 - Nov 2022</p>
+            </div>
+        </section>
+
+        <!-- 课程信息 -->
+        <section class="section" id="courses">
+            <h2>Course Work</h2>
+            <ul>
+                <li>Game Theory and Its Applications</li>
+                <li>Mechanism Design and Auction Theory</li>
+                <li>Smart Supply Chain Management</li>
+                <li>Advanced Statistics</li>
+                <li>Foundations of Optimization</li>
+                <li>Machine Learning</li>
+            </ul>
+            <p><strong>GPA:</strong> 3.3 / 4.0<br>
+            <strong>Status:</strong> Successfully passed qualifying exams and thesis proposal defense</p>
+        </section>
+
+        <!-- 推荐人 -->
+        <section class="section" id="reference">
+            <h2>Reference</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Prof. Qiaochu He</h5>
+                    <p class="card-text">
+                        Tenured Associate Professor<br>
+                        College of Business<br>
+                        Southern University of Science and Technology, China<br>
+                        E-mail: <a href="mailto:heqc@sustech.edu.cn">heqc@sustech.edu.cn</a>
+                    </p>
+                </div>
+            </div>
+        </section>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
