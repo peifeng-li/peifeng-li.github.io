@@ -38,6 +38,18 @@
             border-radius: 5px;
             text-decoration: none;
         }
+          .edu-entry {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+              }
+              .left {
+                text-align: left;
+              }
+              .right {
+                text-align: right;
+                white-space: nowrap;
+        }
     </style>
 </head>
 <body>
@@ -52,8 +64,8 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#papers">Papers</a></li>
                     <li class="nav-item"><a class="nav-link" href="#industry">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#reference">Reference</a></li>
                 </ul>
             </div>
         </div>
@@ -62,31 +74,49 @@
     <div class="container">
         <!-- 头部信息 -->
         <div class="header text-center mb-5">
+            <img src="peifeng.jpg" alt="Peifeng Li" style="width: 120px; height: 120px; border-radius: 50%; margin-bottom: 15px;">
             <h1 class="mt-4">Peifeng Li</h1>
             <p>+86-15836220014 | <a href="mailto:lipf2019@mail.sustech.edu.cn">lipf2019@mail.sustech.edu.cn</a><br>
             SUSTech, Shenzhen 518055, China</p>
-            <a href="1.CV_Peifeng_Li_SUSTech.pdf" class="download-btn mt-2">
+            <a href="CV_Peifeng_Li_SUSTech.pdf" class="download-btn mt-2">
                 <i class="fas fa-download"></i> Download CV
             </a>
         </div>
 
+
         <!-- 教育背景 -->
         <section class="section" id="education">
             <h2>Education</h2>
-            <h5>Southern University of Science and Technology</h5>
-            <p>Ph.D. Candidate, Dept. of Marketing and Operations Management<br>
-            Supervisor: Prof. Qiaochu He</p>
-            <p>Bachelor of Economics<br>
-            Aug 2019 - Jun 2023<br>
-            <em>Selected Awards: SUSTech Motto Scholarship, First-class Scholarship, National Endeavor Scholarship.</em></p>
+            <div class="edu-entry">
+              <div class="left">Ph.D. Candidate in Dept. of Marketing and Operations Management, Southern University of Science and Technology (Advisor: <a href="https://sites.google.com/site/tonyheqiaochu/" style="text-decoration: none; color: inherit;">Prof. Qiaochu He</a>)</div>
+              <div class="right">2023 -</div>
+            </div>
+            <div class="edu-entry">
+              <div class="left">Bachelor of Economics, Southern University of Science and Technology</div>
+              <div class="right">2019 – 2023</div>
+            </div>
+            <p><em>Selected Awards: SUSTech Motto Scholarship, First-class Scholarship, National Endeavor Scholarship.</em></p>
         </section>
 
-        <!-- 研究论文 -->
-        <section class="section">
-            <h2>Research</h2>
+
+        <section class="section" id="research">
+            <h2>Research Interest</h2>
             <ul>
                 <li>
-                    <span class="paper-title">Luxury in the Sharing Economy</span>: Implications of P2P Rental on Conspicuous Consumption<br>
+                    <strong>Topics: </strong> Marketing, Operations Management, Consumer behavior, Information design, Network Effects
+                </li>
+                <li>
+                    <strong>Methodologies: </strong> Stylized Modeling, Experiments, Empirical Analysis
+                </li>
+            </ul>
+        </section>
+        
+        <!-- 研究论文 -->
+        <section class="section" id="papers">
+            <h2>Working Papers</h2>
+            <ul>
+                <li>
+                    <span class="paper-title">Luxury in the Sharing Economy: Implications of P2P Rental on Conspicuous Consumption</span><br>
                     <small>Joint work with Chang Dong, Qiaochu He and Xinlong Zhao</small>
                 </li>
                 <li>
@@ -111,28 +141,16 @@
             <h2>Industry Experience</h2>
             <div class="mb-4">
                 <h5>Super Quantum Fund</h5>
-                <p>Quantitative Factor Researcher (Intern)<br>
-                Jun 2022 - Sep 2022</p>
+                <div class="edu-entry">
+                  <div class="left">Quantitative Factor Researcher (Intern)</div>
+                  <div class="right">Jun 2022 - Sep 2022</div>
+                </div>
             </div>
             <div class="mb-4">
                 <h5>China International Capital Corporation Limited (CICC)</h5>
-                <p>Investment Management Intern (Investment Team)<br>
-                Sep 2022 - Nov 2022</p>
-            </div>
-        </section>
-
-        <!-- 推荐人 -->
-        <section class="section" id="reference">
-            <h2>Reference</h2>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Prof. Qiaochu He</h5>
-                    <p class="card-text">
-                        Tenured Associate Professor<br>
-                        College of Business<br>
-                        Southern University of Science and Technology, China<br>
-                        E-mail: <a href="mailto:heqc@sustech.edu.cn">heqc@sustech.edu.cn</a>
-                    </p>
+                <div class="edu-entry">
+                  <div class="left">Investment Management Intern (Investment Team)</div>
+                  <div class="right">Sep 2022 - Nov 2022</div>
                 </div>
             </div>
         </section>
